@@ -50,6 +50,12 @@ a.button.cta {
 	color: #fff;
 }
 
+.section [class^=container],
+section [class^=container] {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
 @media screen and (min-width: 768px) {
 	.section [class^=container],
 	section [class^=container] {
@@ -76,10 +82,6 @@ header.main {
 	width: 100%;
 }
 
-header.main .container {
-	display: flex;
-}
-
 header.main a {
 	text-decoration: none;
 	color: #fff;
@@ -93,13 +95,13 @@ header.main a.logo {
 }
 
 header.main nav {
+	display: none;
 	margin-left: auto;
 }
 
 header.main nav ul {
 	padding: 0;
 	margin: 0;
-	display: flex;
 }
 
 header.main nav ul li {
@@ -113,6 +115,18 @@ header.main nav ul li a {
 	font-weight: 700;
 }
 
+@media screen and (min-width: 768px) {
+	header.main .container {
+		display: flex;
+	}
+	header.main nav {
+		display: block;
+	}
+	header.main nav ul {
+		display: flex;
+	}
+}
+
 .emotion {
 	background-image: -webkit-linear-gradient(-86deg, #7121ff 0%, #21d4fd 100%);
 	color: #fff;
@@ -120,7 +134,7 @@ header.main nav ul li a {
 }
 
 .emotion h1 {
-	font-size: 4rem;
+	font-size: 3rem;
 }
 
 .emotion h1 span {
@@ -140,6 +154,12 @@ header.main nav ul li a {
 
 .emotion ul li:first-child a {
 	margin-right: 23px;
+}
+
+@media screen and (min-width: 768px) {
+	.emotion h1 {
+		font-size: 4rem;
+	}
 }
 
 footer.main {

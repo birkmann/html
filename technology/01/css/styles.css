@@ -32,6 +32,24 @@ p {
 	margin: 0 auto;
 }
 
+a.button {
+	display: inline-block;
+	padding: 10px 20px;
+	line-height: 1.6em;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	background: #fff;
+	border-radius: 3px;
+	color: #333;
+	box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+}
+
+a.button.cta {
+	background: #3ecf8e;
+	color: #fff;
+}
+
 @media screen and (min-width: 768px) {
 	.section [class^=container],
 	section [class^=container] {
@@ -96,21 +114,40 @@ header.main nav ul li a {
 }
 
 .emotion {
-	background-image: linear-gradient(45deg,#fe2983 0,#ff6f61 50%,#fc9e21 110%);
+	background-image: -webkit-linear-gradient(-86deg, #7121ff 0%, #21d4fd 100%);
 	color: #fff;
-	min-height: 75vh;
 	padding: 50px 0;
 }
 
 .emotion h1 {
-	font-size: 4.5rem;
+	font-size: 4rem;
 }
 
 .emotion h1 span {
 	font-weight: 100;
 }
 
+.emotion ul {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	margin-top: 50px;
+}
+
+.emotion ul li {
+	list-style: none;
+}
+
+.emotion ul li:first-child a {
+	margin-right: 23px;
+}
+
 footer.main {
-	border-top: 1px solid #eee;
 	padding: 50px 0;
+	font-size: .9rem;
+}
+
+footer.main.dark {
+	background: #181715;
+	color: #fff;
 }

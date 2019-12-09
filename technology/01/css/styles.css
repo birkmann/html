@@ -11,6 +11,13 @@ body {
 	box-sizing: border-box;
 }
 
+:root {
+	--cla: #74c947;
+	--em1: #17a77b;
+	--em2: #74c947;
+	--fd: #363f41;
+}
+
 h1, h2, h3, h4, h5, h6 {
 	margin-bottom: .5rem;
 	font-weight: 700;
@@ -47,7 +54,7 @@ a.button {
 	letter-spacing: 1px;
 	background: #fff;
 	border-radius: 50px;
-	color: #333;
+	color: var(--cla);
 	font-weight: bold;
 	box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
 }
@@ -59,7 +66,7 @@ a.button.cta {
 
 a.more {
 	font-weight: 500;
-	color: #74c947;
+	color: var(--cla);
 	text-decoration: none;
 	font-size: 1.25rem;
 	margin-top: 15px;
@@ -162,7 +169,7 @@ header.main nav ul li a {
 }
 
 .emotion {	
-	background-image: linear-gradient(65deg,#17a77b,#74c947);
+	background-image: linear-gradient(65deg,var(--em1),var(--em2));
 	color: #fff;
 	padding-top: 50px;
 	position: relative;
@@ -170,7 +177,7 @@ header.main nav ul li a {
 }
 
 .emotion h1 {
-	font-size: 3rem;
+	font-size: 2.5rem;
 	margin-top: 100px;
 }
 
@@ -189,21 +196,21 @@ header.main nav ul li a {
 	list-style: none;
 }
 
-.emotion ul li:first-child a {
-	margin-right: 23px;
-}
-
 .emotion a.button {
 	width: 220px;
 }
 
 .emotion .iphone {
-	margin-bottom: -155px;
+	margin-top: 50px;
 }
 
 @media screen and (min-width: 768px) {
 	.emotion h1 {
 		font-size: 4rem;
+	}
+	.emotion .iphone {
+		margin-top: 0;
+		margin-bottom: -155px;
 	}
 }
 
@@ -352,7 +359,6 @@ header.main nav ul li a {
 }
 
 .security-section [class*="col"] {
-	padding: 0 100px;
 	position: relative;
 	display: flex;
 	flex-direction: column;
@@ -362,25 +368,40 @@ header.main nav ul li a {
 .security-section .icon {
 	background: #fff;
 	border-radius: 100%;
-	width: 300px;
-	height: 300px;
+	width: 200px;
+	height: 200px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin: 0 auto;
+}
+
+.security-section .icon img {
+	width: 100px;
+}
+
+@media screen and (min-width: 768px) {
+	.security-section [class*="col"] {
+		padding: 0 100px;
+	}
+	.security-section .icon {
+		width: 300px;
+		height: 300px;
+	}
+	.security-section .icon img {
+		width: 150px;
+	}
 }
 
 footer.main {
+	text-align: center;
 	padding: 50px 0;
 	font-size: .9rem;
 }
 
 footer.main.dark {
-	background: #363f41;
+	background: var(--fd);
 	color: #fff;
-}
-
-footer.main .col {
-	flex: 0 0 25%;
 }
 
 footer.main nav ul {
@@ -401,4 +422,16 @@ footer.main nav li a {
 
 footer.main nav li a:hover {
 	color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+	footer.main {
+		text-align: left;
+	}
+	footer.main .row {
+		display: flex;
+	}
+	footer.main .col {
+		flex: 0 0 25%;
+	}
 }

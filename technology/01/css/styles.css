@@ -62,7 +62,8 @@ a.more {
 	color: #74c947;
 	text-decoration: none;
 	font-size: 1.25rem;
-	margin-top: 20px;
+	margin-top: 15px;
+	margin-bottom: 15px;
 }
 
 h2 {
@@ -161,32 +162,12 @@ header.main nav ul li a {
 }
 
 .emotion {	
-	background-image: linear-gradient(to top right,#450b7c,#563cc9,#49e9fb);
-
-	background-image: url(https://sqy7rm.media.zestyio.com/branches.svg),linear-gradient(65deg,#17a77b,#74c947);
-	background-repeat: no-repeat,no-repeat;
-	background-position: left;
-
+	background-image: linear-gradient(65deg,#17a77b,#74c947);
 	color: #fff;
 	padding-top: 50px;
 	position: relative;
 	z-index: 1;
 }
-
-/*
-.emotion:before {
-	content: "";
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background-image: url(https://paperpillar.com/assets/images/hero-pattern-bg-lg.png);
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-}
-*/
 
 .emotion h1 {
 	font-size: 3rem;
@@ -295,21 +276,6 @@ header.main nav ul li a {
 	flex: 0 0 67%;
 }
 
-.intro .bottom-leaf {
-	position: absolute;
-	bottom: -100px;
-	right: 50px;
-	transform: scale(1.1);
-}
-
-.intro .top-leaf {
-	position: absolute;
-	top: -100px;
-	right: 70.5%;
-	z-index: 0;
-	transform: scale(1.1);
-}
-
 .intro .list-container {
 	position: relative;
 	width: 100%;
@@ -351,6 +317,10 @@ header.main nav ul li a {
 	margin: -8px 0 0 10px;
 }
 
+.intro .list .icon img {
+	width: 100%;
+}
+
 .intro .list .copy-container {
 	padding-left: 26px;
 	display: flex;
@@ -389,6 +359,16 @@ header.main nav ul li a {
 	justify-content: center;
 }
 
+.security-section .icon {
+	background: #fff;
+	border-radius: 100%;
+	width: 300px;
+	height: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 footer.main {
 	padding: 50px 0;
 	font-size: .9rem;
@@ -396,5 +376,29 @@ footer.main {
 
 footer.main.dark {
 	background: #363f41;
+	color: #fff;
+}
+
+footer.main .col {
+	flex: 0 0 25%;
+}
+
+footer.main nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+footer.main nav li {
+	list-style: none;
+}
+
+footer.main nav li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: all .2s ease-out;
+    display: inline-block;
+}
+
+footer.main nav li a:hover {
 	color: #fff;
 }

@@ -46,7 +46,7 @@ a.button {
 }
 
 a.button.cta {
-	background: #3ecf8e;
+	background: #05b169;
 	color: #fff;
 }
 
@@ -80,6 +80,7 @@ header.main {
 	top: 10px;
 	left: 0;
 	width: 100%;
+	z-index: 100;
 }
 
 header.main a {
@@ -128,10 +129,27 @@ header.main nav ul li a {
 }
 
 .emotion {
-	background-image: -webkit-linear-gradient(-86deg, #7121ff 0%, #21d4fd 100%);
+	background-image: linear-gradient(to top right,#450b7c,#563cc9,#49e9fb);
+	background: #4285f4;
 	color: #fff;
 	padding: 50px 0;
+	position: relative;
 }
+
+/*
+.emotion:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-image: url(https://paperpillar.com/assets/images/hero-pattern-bg-lg.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+*/
 
 .emotion h1 {
 	font-size: 3rem;
@@ -154,6 +172,63 @@ header.main nav ul li a {
 
 .emotion ul li:first-child a {
 	margin-right: 23px;
+}
+
+.ipad,
+.iphone {
+	border: 1px solid #edf4f8;
+    margin: 0 auto;
+    position: relative;
+    background: #fff;
+    max-width: 255px;
+    border-radius: 36px;
+    padding: 55px 0;
+    box-shadow: inset 0 4px 10px 1px #fff, inset 0 0 6px 0 rgba(66,77,86,.5), 0 2px 0 #aeb5bb, 0 20px 50px -25px rgba(0,0,0,.5);
+}
+
+.ipad:before,
+.iphone:before {
+	content: '';
+    position: absolute;
+    background: #e3e8eb;
+    margin: -25px auto 0;
+    width: 45px;
+    height: 4px;
+    left: 0;
+    right: 0;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+    border-radius: 30px;
+}
+
+.ipad:after,
+.iphone-x:after,
+.iphone:after {
+	content: '';
+    position: absolute;
+	top: 30px;
+    margin-left: -45px;
+    background: #e3e8eb;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    box-shadow: 0 0 0 2px rgba(0,0,0,.03);
+    display: block;
+    border-radius: 50%;
+}
+
+.ipad .screen,
+.iphone .screen {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.ipad .screen img,
+.iphone .screen img,
+.ipad .screen video,
+.iphone .screen video {
+	box-shadow: 0 0 0 1px rgba(0,17,53,.16);
+	max-width: 100%;
+	vertical-align: middle;
 }
 
 @media screen and (min-width: 768px) {

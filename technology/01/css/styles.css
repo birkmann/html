@@ -3,8 +3,8 @@ body {
 	font: 16px/1.9em 'Roboto', sans-serif;
 	background: #fff;
 	color: #333;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 * {
@@ -12,18 +12,18 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    margin-bottom: .5rem;
-    font-weight: 700;
-    line-height: 1;
+	margin-bottom: .5rem;
+	font-weight: 700;
+	line-height: 1;
 }
 
 p {
-    margin: 1rem 0;
+	margin: 1rem 0;
 }
 
 .lead {
-    font-size: 1.25rem;
-    font-weight: 300;
+	font-size: 1.25rem;
+	font-weight: 300;
 }
 
 .container {
@@ -34,14 +34,15 @@ p {
 
 a.button {
 	display: inline-block;
-	padding: 10px 20px;
+	padding: 12px 25px;
 	line-height: 1.6em;
 	text-decoration: none;
-	text-transform: uppercase;
+	text-align: center;
 	letter-spacing: 1px;
 	background: #fff;
-	border-radius: 3px;
+	border-radius: 50px;
 	color: #333;
+	font-weight: bold;
 	box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
 }
 
@@ -50,17 +51,23 @@ a.button.cta {
 	color: #fff;
 }
 
+a.more {
+	font-weight: 500;
+	color: #74c947;
+	text-decoration: none;
+}
+
 .section [class^=container],
 section [class^=container] {
-    padding-top: 50px;
-    padding-bottom: 50px;
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
 
 @media screen and (min-width: 768px) {
 	.section [class^=container],
 	section [class^=container] {
-    	padding-top: 90px;
-    	padding-bottom: 90px;
+		padding-top: 90px;
+		padding-bottom: 90px;
 	}
 	.row {
 		display: flex;
@@ -68,10 +75,10 @@ section [class^=container] {
 		margin-right: -20px;
 	}
 	[class*="col"] {
-    	margin: 0 20px;
+		margin: 0 20px;
 	}
 	.col-md-6 {
-		flex: 0 0 50%;
+		flex: 0 0 calc(50% - 40px);
 	}
 }
 
@@ -95,8 +102,16 @@ header.main a.logo {
 	letter-spacing: -2px;
 }
 
-header.main a.logo img {
-	width: 30px;
+header.main a.logo .icon {
+	background-image: url(https://sqy7rm.media.zestyio.com/acorns-logo-white.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 35px;
+	width: 34px;
+	display: inline-block;
+	top: 5px;
+	position: relative;
 }
 
 header.main nav {
@@ -132,10 +147,15 @@ header.main nav ul li a {
 	}
 }
 
-.emotion {
+.emotion {	
 	background-image: linear-gradient(to top right,#450b7c,#563cc9,#49e9fb);
+
+	background-image: url(https://sqy7rm.media.zestyio.com/branches.svg),linear-gradient(65deg,#17a77b,#74c947);
+	background-repeat: no-repeat,no-repeat;
+	background-position: left;
+
 	color: #fff;
-	padding: 50px 0;
+	padding-top: 50px;
 	position: relative;
 }
 
@@ -156,6 +176,7 @@ header.main nav ul li a {
 
 .emotion h1 {
 	font-size: 3rem;
+	margin-top: 100px;
 }
 
 .emotion h1 span {
@@ -177,67 +198,171 @@ header.main nav ul li a {
 	margin-right: 23px;
 }
 
-.ipad,
-.iphone {
-	border: 1px solid #edf4f8;
-    margin: 0 auto;
-    position: relative;
-    background: #fff;
-    max-width: 255px;
-    border-radius: 36px;
-    padding: 55px 0;
-    box-shadow: inset 0 4px 10px 1px #fff, inset 0 0 6px 0 rgba(66,77,86,.5), 0 2px 0 #aeb5bb, 0 20px 50px -25px rgba(0,0,0,.5);
+.emotion a.button {
+	width: 220px;
 }
 
-.ipad:before,
-.iphone:before {
-	content: '';
-    position: absolute;
-    background: #e3e8eb;
-    margin: -25px auto 0;
-    width: 45px;
-    height: 4px;
-    left: 0;
-    right: 0;
-    box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
-    border-radius: 30px;
-}
-
-.ipad:after,
-.iphone-x:after,
-.iphone:after {
-	content: '';
-    position: absolute;
-	top: 30px;
-    margin-left: -45px;
-    background: #e3e8eb;
-    left: 50%;
-    width: 8px;
-    height: 8px;
-    box-shadow: 0 0 0 2px rgba(0,0,0,.03);
-    display: block;
-    border-radius: 50%;
-}
-
-.ipad .screen,
-.iphone .screen {
-    width: 90%;
-    margin: 0 auto;
-}
-
-.ipad .screen img,
-.iphone .screen img,
-.ipad .screen video,
-.iphone .screen video {
-	box-shadow: 0 0 0 1px rgba(0,17,53,.16);
-	max-width: 100%;
-	vertical-align: middle;
+.emotion .iphone {
+	margin-bottom: -150px;
 }
 
 @media screen and (min-width: 768px) {
 	.emotion h1 {
 		font-size: 4rem;
 	}
+}
+
+.iphone {
+	border: 1px solid #edf4f8;
+	margin: 0 auto;
+	position: relative;
+	background: #fff;
+	max-width: 302px;
+	border-radius: 36px;
+	padding: 55px 0;
+	box-shadow: inset 0 4px 10px 1px #fff, inset 0 0 6px 0 rgba(66,77,86,.5), 0 2px 0 #aeb5bb, 0 20px 50px -25px rgba(0,0,0,.5);
+}
+
+.iphone:before {
+	content: '';
+	position: absolute;
+	background: #e3e8eb;
+	margin: -25px auto 0;
+	width: 45px;
+	height: 4px;
+	left: 0;
+	right: 0;
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+	border-radius: 30px;
+}
+
+.iphone:after {
+	content: '';
+	position: absolute;
+	top: 30px;
+	margin-left: -45px;
+	background: #e3e8eb;
+	left: 50%;
+	width: 8px;
+	height: 8px;
+	box-shadow: 0 0 0 2px rgba(0,0,0,.03);
+	display: block;
+	border-radius: 50%;
+}
+
+.iphone .screen {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.iphone .screen img,
+.iphone .screen video {
+	box-shadow: 0 0 0 1px rgba(0,17,53,.16);
+	max-width: 100%;
+	vertical-align: middle;
+}
+
+.intro {
+	overflow: hidden;
+}
+
+.intro .col {
+	position: relative;
+}
+
+.intro .col:first-child {
+	flex: 0 0 35%;
+}
+
+.intro .col:last-child {
+	flex: 0 0 65%;
+}
+
+.intro .col:first-child h2 {
+	font-size: 2.5rem;
+	font-weight: 500;
+}
+
+.intro a.more {
+	font-size: 1.25rem;
+	margin-top: 25px;
+	display: inline-block;
+}
+
+.intro .bottom-leaf {
+	position: absolute;
+	bottom: -100px;
+	right: 50px;
+	transform: scale(1.1);
+}
+
+.intro .top-leaf {
+	position: absolute;
+	top: -100px;
+	right: 70.5%;
+	z-index: 0;
+	transform: scale(1.1);
+}
+
+.intro .list-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.intro .list {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	position: relative;
+	z-index: 2;
+	border-radius: 4px;
+	box-shadow: 0 1px 2px 0 rgba(0,0,0,0.13);
+	background-color: #fff;
+	border: solid 1px #f1f1f1;
+	max-width: 450px;
+}
+
+.intro .list .item-container {
+    padding: 16px 60px 24px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.intro .list .icon {
+    height: 36px;
+    width: 36px;
+    min-width: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro .list .icon img {
+	width: 100%;
+}
+
+.intro .list .copy-container {
+    padding-left: 26px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.intro .list .title {
+    font-weight: 600;
+    color: #363f41;
+    margin: 0 0 10px;
+}
+
+.intro .list .description {
+	color: #363f41;
+	margin: 0;
 }
 
 footer.main {

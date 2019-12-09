@@ -95,6 +95,10 @@ header.main a.logo {
 	letter-spacing: -2px;
 }
 
+header.main a.logo img {
+	width: 30px;
+}
+
 header.main nav {
 	display: none;
 	margin-left: auto;
@@ -130,7 +134,6 @@ header.main nav ul li a {
 
 .emotion {
 	background-image: linear-gradient(to top right,#450b7c,#563cc9,#49e9fb);
-	background: #4285f4;
 	color: #fff;
 	padding: 50px 0;
 	position: relative;

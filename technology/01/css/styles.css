@@ -197,7 +197,7 @@ header.main nav ul li a {
 }
 
 .emotion a.button {
-	width: 220px;
+	max-width: 220px;
 }
 
 .emotion .iphone {

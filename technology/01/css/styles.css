@@ -168,6 +168,68 @@ header.main nav ul li a {
 	}
 }
 
+
+@media screen and (max-width: 767px) {
+	.nav-toggle {
+	    width: 70px;
+	    height: 60px;
+	    position: absolute;
+	    right: 0;
+	    top: 0;
+	    cursor: pointer;
+	    padding-top: 10px;
+	}
+
+	.nav-toggle .burger {
+		font-size: 0;
+		margin: 20px 10px;
+	}
+
+	.nav-toggle .burger span {
+		margin-bottom: 5px;
+		width: 35px;
+		height: 3px;
+		background: #fff;
+		display: block;
+		transition: all 0.15s ease-in-out;
+	}
+	.nav-toggle .burger span:nth-child(2) {
+		width: 25px;
+	}
+
+	body.open .nav-toggle .burger span {
+		background: #333;
+	}
+	body.open .nav-toggle .burger span:nth-child(1) {
+		transform: translateY(8px) rotate(45deg);
+	}
+	body.open .nav-toggle .burger span:nth-child(2) {
+		width: 0;
+	}
+	body.open .nav-toggle .burger span:nth-child(3) {
+		transform: translateY(-8px) rotate(-45deg);
+	}
+	body.open nav.main {
+		display: block;
+	    position: absolute;
+	    width: 100%;
+	    top: 0;
+	    left: 0;
+	}
+	body.open nav.main ul {
+	    background: #eee;
+	    padding: 20px;
+	    margin: 10px;
+	    border-radius: 3px;
+	    box-shadow: 0 2px 2px rgba(0,0,0,0.1);
+	}
+	body.open nav.main a {
+		color: #333;
+		line-height: 1em;
+		padding: 20px 10px;
+	}
+}
+
 .emotion {	
 	background-image: linear-gradient(65deg,var(--em1),var(--em2));
 	color: #fff;
@@ -407,8 +469,8 @@ header.main nav ul li a {
 }
 
 .security-section .text {
-    max-width: 350px;
-    margin: 0 auto;
+	max-width: 350px;
+	margin: 0 auto;
 }
 
 
@@ -443,10 +505,10 @@ footer.main nav li {
 }
 
 footer.main nav li a {
-    color: #ccc;
-    text-decoration: none;
-    transition: all .2s ease-out;
-    display: inline-block;
+	color: #ccc;
+	text-decoration: none;
+	transition: all .2s ease-out;
+	display: inline-block;
 }
 
 footer.main nav li a:hover {

@@ -12,7 +12,7 @@ function onReady(callback) {
 			window.clearInterval(intervalId);
 			callback.call(this);
 		}
-	}, 3000);
+	}, 2000);
 }
 
 onReady(function() {

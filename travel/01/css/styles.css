@@ -45,7 +45,7 @@ body {
 }
 
 .loader {
-	opacity: 0;
+	opacity: 1;
 	margin:auto;
 	left:0;
 	right:0;
@@ -55,13 +55,23 @@ body {
 	width: 300px; 
 	height: 300px; 
 	display: block;
-	animation: loader-spinning 2s linear 1;
 	z-index: 100;
-	background-image: url("https://images.pexels.com/photos/1680140/pexels-photo-1680140.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
-	background-size: cover;
-	background-position: center;
 	border-radius: 100%;
 	overflow: hidden;
+	background: var(--cl1);
+	animation: loader-spinning 1.2s linear 1;
+}
+
+.loader:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 20px;
+	height: 20px;
+	background: #fff;
+	display: block;
+	z-index: 9999;
 }
 
 body.loaded .loader {

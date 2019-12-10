@@ -177,8 +177,8 @@ header.main nav ul li a {
 }
 
 .emotion h1 {
-	font-size: 2.5rem;
-	margin-top: 100px;
+	font-size: 2.25rem;
+	margin-top: 50px;
 }
 
 .emotion h1 span {
@@ -204,13 +204,38 @@ header.main nav ul li a {
 	margin-top: 50px;
 }
 
-@media screen and (min-width: 768px) {
-	.emotion h1 {
-		font-size: 3.7rem;
+@media screen and (max-width: 767px) {
+	.emotion {
+		text-align: center;
+		margin-bottom: 25px;
 	}
+	.emotion .container {
+		max-width: 350px;
+	}
+	.emotion ul li {
+		list-style: none;
+		width: 100%;
+	}
+	.emotion a.button {
+		margin: 0 auto;
+		display: block;
+	}
+	.emotion .iphone {
+		margin-bottom: -100px;
+	}
+}
+
+@media screen and (min-width: 768px) {
 	.emotion .iphone {
 		margin-top: 0;
 		margin-bottom: -155px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.emotion h1 {
+		font-size: 3.7rem;
+		margin-top: 100px;
 	}
 }
 
@@ -381,10 +406,13 @@ header.main nav ul li a {
 	width: 100px;
 }
 
+.security-section .text {
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+
 @media screen and (min-width: 768px) {
-	.security-section [class*="col"] {
-		padding: 0 100px;
-	}
 	.security-section .icon {
 		width: 300px;
 		height: 300px;

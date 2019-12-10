@@ -1,3 +1,12 @@
+@font-face {
+    font-family: Blowbrush;
+    src: url("../fonts//blowbrush.otf") format("opentype");
+}
+
+:root {
+	--cl1: #74c947;
+}
+
 body {
 	margin: 0;
 	font: 15px/1.9em 'Poppins', sans-serif;
@@ -50,7 +59,7 @@ header.main {
 }
 
 header.main .container {
-	max-width: 100%;
+	max-width: 1600px;
 }
 
 header.main a {
@@ -60,67 +69,109 @@ header.main a {
 
 header.main a.logo {
 	display: flex;
+	margin-top: 10px;
 }
 
 header.main a.logo img {
-	height: 40px;
-	margin-right: 10px;
+	height: 90px;
+	margin-right: 15px;
+	margin-top: -10px;
 }
 
 header.main a.logo .text {
-	line-height: 1.4em;
+	line-height: 2.4em;
 }
 
 header.main a.logo .text .main {
-	font-size: 28px;
-	font-weight: 700;
+	font-family: 'Blowbrush', cursive;
+	font-size: 55px;
 	display: block;
 }
 
 header.main a.logo .text .sub {
-	font-size: 18px;
+	font-family: 'Pacifico', cursive;
+	font-size: 40px;
 	display: block;
+	color: var(--cl1);
 }
 
-header.main nav.main {
+header.main .nav-wrapper {
 	display: none;
 }
 
-body.open header.main nav.main {
+body.open header.main .nav-wrapper {
 	display: block;
 }
 
-header.main nav.main ul {
+header.main .nav-wrapper ul {
 	margin: 0;
 	padding: 0;
 }
 
-header.main nav.main ul li {
+header.main .nav-wrapper ul li {
 	list-style: none;
 }
 
-header.main nav.main ul li a {
+header.main .nav-wrapper ul li a {
 	display: block;
-	line-height: 60px;
-	padding: 0 20px;
+	line-height: 80px;
+	margin: 0 20px;
 	font-size: 1.2em;
 	font-weight: 500;
 	text-align: center;
 }
 
+header.main .nav-wrapper ul li.button a {
+	background: var(--cl1);
+    padding: 5px 20px;
+    border-radius: 50px;
+    color: #333;
+    margin-top: -5px;
+    font-weight: bold;
+    transition: all 0.25s ease-in-out;
+}
+
+header.main .nav-wrapper ul li.button a:hover {
+	background: #fff;
+}
+
+header.main .nav-wrapper nav.top ul li a {
+	line-height: 25px;
+	font-size: 1em;
+}
+
 @media (min-width: 960px) {
+	header.main {
+		margin-top: 40px;
+	}
 	header.main .container {
 		display: flex;
 	}
-	header.main nav.main {
+	header.main .nav-wrapper {
 		display: block;
 		margin-left: auto;
 	}
-	header.main nav.main ul {
+	header.main .nav-wrapper ul {
 		display: flex;
+		justify-content: flex-end;
 	}
-	header.main nav.main ul li a {
+	header.main .nav-wrapper ul li a {
 		display: inline-block;
+		position: relative;
+	}
+	header.main nav.main ul li a:after {
+		content: "";
+		width: 100%;
+		height: 2px;
+		position: absolute;
+		background: var(--cl1);
+		left: 0;
+		bottom: 25px;
+		transition: all 0.25s ease-in-out;
+		transform: scale(0);
+	}
+	header.main nav.main ul li a:hover:after {
+		transform: scale(1);
 	}
 }
 
@@ -202,21 +253,17 @@ header.main nav.main ul li a {
 	height: 100vh;
 	background-size: cover;
 	position: relative;
+	background-position: top;
 }
 
 .emotion:before {
-    background: radial-gradient(ellipse 100% 160% at 65% 28%,rgba(0,0,0,0),#000,#000);
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    opacity: .5;
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-    display: block;
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 200px;
+	background: linear-gradient(-180deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);
 }
 
 @media (min-width: 960px) {

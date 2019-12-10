@@ -326,6 +326,7 @@ header.main nav ul li a {
 
 .intro .list .icon img {
 	width: 100%;
+	max-width: 25px;
 }
 
 .intro .list .copy-container {

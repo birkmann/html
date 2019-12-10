@@ -74,7 +74,7 @@ a.more {
 }
 
 h2 {
-	font-size: 2.5rem;
+	font-size: 2.25rem;
 	font-weight: 500;
 }
 
@@ -96,7 +96,7 @@ section [class^=container] {
 		margin-right: -20px;
 	}
 	[class*="col"] {
-		margin: 0 20px;
+		padding: 0 20px;
 	}
 	.col-md-6 {
 		flex: 0 0 calc(50% - 40px);
@@ -206,7 +206,7 @@ header.main nav ul li a {
 
 @media screen and (min-width: 768px) {
 	.emotion h1 {
-		font-size: 4rem;
+		font-size: 3.7rem;
 	}
 	.emotion .iphone {
 		margin-top: 0;
@@ -276,11 +276,11 @@ header.main nav ul li a {
 }
 
 .intro .col:first-child {
-	flex: 0 0 33%;
+	flex: 0 0 40%;
 }
 
 .intro .col:last-child {
-	flex: 0 0 67%;
+	flex: 0 0 60%;
 }
 
 .intro .list-container {

@@ -43,6 +43,38 @@ body {
 	margin: 0 auto;
 }
 
+.loader {
+	position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+	width: 300px; 
+	height: 300px; 
+	display: block;
+	animation: loader-spinning 3s linear infinite;
+	z-index: 100;
+	background-image: url("https://i.pinimg.com/originals/07/ef/e4/07efe42da6d653e3d88cebafd75e4760.png");
+	background-size: cover;
+	background-position: center;
+	border-radius: 100%;
+	overflow: hidden;
+}
+
+body.loaded .loader {
+	visibility: hidden;
+}
+
+@keyframes loader-spinning {
+	from {
+		opacity: 1;
+		transform: rotate(-90deg);
+	}
+	to {
+		opacity: 0;
+		transform: rotate(180deg);
+	}
+}
+
 header.main {
 	position: absolute;
 	z-index: 100;

@@ -57,7 +57,8 @@ body {
 
 .side-menu .brand {
 	background: red;
-	margin-bottom: 100px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 	height: 110px;
 }
 
@@ -84,13 +85,13 @@ body {
 .overview {
 	background: #f0f0f0;
 	color: #666;
-	flex: 0 0 460px;
+	flex: 0 0 360px;
 	padding: 30px;
 }
 
 .overview .user {
 	text-align: center;
-	margin-top: 50px;
+	margin-top: 20px;
 }
 
 .overview .user img.avatar {
@@ -100,14 +101,14 @@ body {
 
 .overview .user .name {
 	font-weight: 500;
-	font-size: 2em;
-	margin: 30px 0;
+	font-size: 1.5em;
+	margin: 15px 0;
 }
 
 .overview .user .balance {
 	font-weight: 500;
-	font-size: 3em;
-	margin-bottom: 100px;
+	font-size: 2.25em;
+	margin-bottom: 50px;
 	color: #333;
 }
 
@@ -118,14 +119,13 @@ body {
 
 .overview .card {
 	width: 100%;
-	height: 250px;
 	border-radius: 10px;
 	background: red;
 	display: block;
 	margin: 30px 0;
 	position: relative;
 	text-align: left;
-	padding: 30px 50px;
+	padding: 20px;
 	color: #fff;
 }
 
@@ -136,22 +136,22 @@ body {
 .overview .card .logo {
 	position: absolute;
 	bottom: 35px;
-	right: 30px;
-	width: 35px;
+	right: 20px;
+	width: 20px;
 }
 
 .overview .card .chip {
-	width: 65px;
-	height: 45px;
+	width: 50px;
+	height: 40px;
 	background: #e8ebf0;
 	border-radius: 5px;
 	display: block;
-	margin-top: 20px;
-	margin-bottom: 35px;
+	margin-top: 10px;
+	margin-bottom: 20px;
 }
 
 .overview .card .number {
-	font-size: 1.7em;
+	font-size: 1.5em;
 	font-family: 'Courier Prime', monospace;
 	margin-bottom: 20px;
 }
@@ -174,12 +174,11 @@ body {
 	background: #fff;
 	color: #666;
 	padding: 30px;
-	flex: 0 0 calc(100% - 460px);
+	flex: 0 0 calc(100% - 360px);
 }
 
 .data h2 {
 	color: #333;
-	font-size: 3em;
 	margin: 0;
 }
 

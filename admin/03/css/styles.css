@@ -41,14 +41,26 @@ body {
 
 .side-menu li a {
 	display: flex;
-	justify-content: center;
-	padding: 25px;
+	flex-direction: column;
+	padding: 15px 0;
+	text-decoration: none;
+	text-align: center;
 }
 
 .side-menu li a img {
 	width: 30px;
 	opacity: 0.8;
 	transition: all 0.25s ease-in-out;
+}
+
+.side-menu li a .icon {
+	display: block;
+}
+
+.side-menu li a .text {
+	display: block;
+	color: #fff;
+	display: block;
 }
 
 .side-menu li a:hover img {
@@ -58,7 +70,6 @@ body {
 .side-menu .brand {
 	background: red;
 	margin-top: 20px;
-	margin-bottom: 20px;
 	height: 110px;
 }
 

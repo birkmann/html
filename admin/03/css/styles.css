@@ -136,10 +136,6 @@ body {
 	color: #fff;
 }
 
-.overview .card.sec {
-	background: red;
-}
-
 .overview .card .logo {
 	position: absolute;
 	bottom: 35px;

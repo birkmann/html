@@ -146,6 +146,7 @@ body {
 		margin: 0 10px;
 		display: flex;
 		flex-direction: column;
+		overflow: hidden;
 	}
 	.col-lg-6 {
 		flex: 0 0 calc(50% - 20px);

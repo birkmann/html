@@ -25,7 +25,7 @@ body {
     bottom: 0;
     left: 0;
     z-index: 98;
-    width: 120px;
+    width: 100px;
     transform: translateX(-100%);
     transition: all 0.25s ease-in-out;
 }
@@ -103,20 +103,20 @@ body {
 
 .overview .user img.avatar {
 	border-radius: 100%;
-	max-width: 150px;
+	max-width: 120px;
 }
 
 .overview .user .name {
 	font-weight: 500;
-	font-size: 1.5em;
-	margin: 15px 0;
+	font-size: 1.2em;
+	margin: 10px 0;
 }
 
 .overview .user .balance {
 	font-weight: 500;
-	font-size: 2.25em;
+	font-size: 2em;
 	margin-bottom: 50px;
-	color: #333;
+	color: #00724b;
 }
 
 .overview .user .balance span {
@@ -138,9 +138,9 @@ body {
 
 .overview .card .logo {
 	position: absolute;
-	bottom: 25px;
+	width: 18px;
+	bottom: 22px;
 	right: 20px;
-	width: 20px;
 }
 
 .overview .card .chip {
@@ -155,12 +155,12 @@ body {
 
 .overview .card .number {
 	font-size: 1.15em;
+	margin-bottom: 10px;
 	font-family: 'Courier Prime', monospace;
-	margin-bottom: 5px;
 }
 
 .overview .card .name {
-	font-size: 1.3em;
+	font-size: 1em;
 	font-family: 'Courier Prime', monospace;
 	margin: 0;
 	line-height: 1.2em;
@@ -171,7 +171,7 @@ body {
 	    transform: translateX(0%);
 	}
 	.content {
-		margin-left: 120px;
+		margin-left: 100px;
 	}
 	.row {
 		display: flex;

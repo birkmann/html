@@ -12,3 +12,50 @@ body {
 	box-sizing: border-box;
 }
 
+.side-menu {
+	background: #1e1e2d;
+	color: #fff;
+	position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 98;
+    width: 265px;
+}
+
+.side-menu ul {
+	margin: 0;
+	padding: 0;
+}
+
+.side-menu li {
+	list-style: none;
+}
+
+.side-menu li.title {
+	padding: 20px 20px 5px;
+}
+
+.side-menu a {
+	padding: 10px 20px;
+	color: #a2a3b7;
+	text-decoration: none;
+	transition: all 0.15s ease-in-out;
+	display: block;
+}
+
+.side-menu a:hover {
+	color: #fff;
+}
+
+.content {
+	padding-left: 265px;
+}
+
+.content .row {
+	display: flex;
+}
+
+.content .row .col {
+	display: flex;
+}

@@ -89,6 +89,13 @@ body {
 	padding: 30px;
 }
 
+.data {
+	background: #fff;
+	color: #666;
+	padding: 30px;
+	flex: 0 0 calc(100% - 360px);
+}
+
 .overview .user {
 	text-align: center;
 	margin-top: 20px;
@@ -170,18 +177,6 @@ body {
 	line-height: 1.2em;
 }
 
-.data {
-	background: #fff;
-	color: #666;
-	padding: 30px;
-	flex: 0 0 calc(100% - 360px);
-}
-
-.data h2 {
-	color: #333;
-	margin: 0;
-}
-
 @media screen and (min-width: 1024px) {
 	.side-menu {
 	    transform: translateX(0%);
@@ -213,4 +208,12 @@ body {
 	.col-xl-8 {
 		flex: 0 0 calc(66.666% - 20px);
 	}
+}
+
+.data h2 {
+	color: #333;
+}
+
+.data canvas {
+	width: 100% !important;
 }

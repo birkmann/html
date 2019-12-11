@@ -63,6 +63,10 @@ body {
 	margin: 0 0 10px;
 }
 
+.box .chart {
+	width: 100%;
+}
+
 @media screen and (min-width: 1000px) {
 	.side-menu {
 	    transform: translateX(0%);
@@ -84,7 +88,7 @@ body {
 	}
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1200px) {
 	.col-xl-4 {
 		flex: 0 0 calc(33.333% - 30px);
 	}

@@ -85,15 +85,15 @@ body {
 .overview {
 	background: #f0f0f0;
 	color: #666;
-	flex: 0 0 360px;
-	padding: 30px;
+	flex: 0 0 300px;
+	padding: 20px;
 }
 
 .data {
 	background: #fff;
 	color: #666;
 	padding: 30px;
-	flex: 0 0 calc(100% - 360px);
+	flex: 0 0 calc(100% - 300px);
 }
 
 .overview .user {
@@ -138,7 +138,7 @@ body {
 
 .overview .card .logo {
 	position: absolute;
-	bottom: 35px;
+	bottom: 25px;
 	right: 20px;
 	width: 20px;
 }
@@ -154,15 +154,15 @@ body {
 }
 
 .overview .card .number {
-	font-size: 1.5em;
+	font-size: 1.2em;
 	font-family: 'Courier Prime', monospace;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 }
 
 .overview .card .exp {
 	font-size: 1em;
 	font-family: 'Courier Prime', monospace;
-	margin: 0 0 5px;
+	margin: 0;
 	line-height: 1.2em;
 }
 

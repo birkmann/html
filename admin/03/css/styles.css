@@ -86,7 +86,7 @@ body {
 	background: #f0f0f0;
 	color: #666;
 	flex: 0 0 300px;
-	padding: 20px;
+	padding: 30px;
 }
 
 .data {
@@ -144,26 +144,19 @@ body {
 }
 
 .overview .card .chip {
-	width: 50px;
-	height: 40px;
+	width: 45px;
+	height: 35px;
 	background: #e8ebf0;
 	border-radius: 5px;
 	display: block;
 	margin-top: 10px;
-	margin-bottom: 20px;
+	margin-bottom: 15px;
 }
 
 .overview .card .number {
-	font-size: 1.2em;
+	font-size: 1.15em;
 	font-family: 'Courier Prime', monospace;
-	margin-bottom: 10px;
-}
-
-.overview .card .exp {
-	font-size: 1em;
-	font-family: 'Courier Prime', monospace;
-	margin: 0;
-	line-height: 1.2em;
+	margin-bottom: 5px;
 }
 
 .overview .card .name {

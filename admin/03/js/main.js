@@ -5,8 +5,8 @@ new Chart(document.getElementById("line-chart"), {
 	data: {
 		labels: [1.12,2.12,3.12,4.12,5.12,6.12,7.12,8.12,9.12,1.12],
 		datasets: [{ 
-			data: [1507.98,932.38,866.01,854.02,845.02,808.89,808.89,808.89,808.89,0],
-			label: "Label",
+			data: [1507.98,932.38,866.01,854.02,845.02,808.89,808.89,808.89,808.89,800],
+			label: "Guthaben",
 			borderColor: "#000",
 			fill: false
 		}
@@ -18,7 +18,14 @@ new Chart(document.getElementById("line-chart"), {
 			text: ''
 		},
 		legend: {
-        	display: false
-    	}
+			display: false
+		},
+		scales: {
+			yAxes: [{
+				ticks: {
+					beginAtZero: true
+				}
+			}]
+		}
 	}
 });

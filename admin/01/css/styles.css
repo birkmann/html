@@ -76,14 +76,16 @@ body {
 	    transform: translateX(0%);
 	}
 	.content {
-		padding-left: 265px;
+		margin-left: 265px;
 	}
 	.row {
 		display: flex;
 		flex-wrap: wrap;
+		margin-left: -10px;
+		margin-right: -10px;
 	}
 	[class^="col"] {
-		margin: 10px;
+		margin: 0 10px;
 		display: flex;
 		flex-direction: column;
 	}

@@ -78,15 +78,43 @@ body {
 
 .overview {
 	background: #273dac;
-	color: #fff;
+	color: #eef3f9;
 	flex: 0 0 460px;
 	padding: 30px;
 }
+
+.overview .user {
+	text-align: center;
+	margin-top: 50px;
+}
+
+.overview .user img {
+	border-radius: 100%;
+	max-width: 150px;
+}
+
+.overview .user .name {
+	font-weight: 500;
+	font-size: 2em;
+	margin: 30px 0;
+}
+
+.overview .user .balance {
+	font-weight: 700;
+	font-size: 3em;
+}
+
+.overview .user .balance span {
+	font-weight: 400;
+	font-size: 0.75em;
+}
+
 
 .data {
 	background: #eef1f6;
 	color: #747579;
 	padding: 30px;
+	flex: 0 0 calc(100% - 460px);
 }
 
 .data h2 {

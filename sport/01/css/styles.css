@@ -1,0 +1,102 @@
+body {
+	margin: 0;
+	font: 14px/1.9em 'Roboto', sans-serif;
+	color: #333;
+	overflow-x: hidden;
+	width: 100%;
+}
+
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+h2 {
+	font-weight: normal;
+	font-size: 1.8em;
+	line-height: 1.4em;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.img-r {
+	max-width: 100%;
+	height: auto;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+header.main {
+	background: #111;
+	position: relative;
+	z-index: 100;
+}
+
+header.main .center a.logo img {
+	max-width: 140px;
+	margin: -20px 0 -30px;
+}
+
+nav.main ul {
+	display: flex;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	justify-content: center;
+}
+
+nav.main li {
+	list-style: none;
+	text-align: center;
+	flex: 0 0 14.27%;
+}
+
+nav.main a {
+	display: block;
+	text-decoration: none;
+	color: #fff;
+	font-weight: 500;
+	font-size: 1rem;
+	padding: 0 25px;
+	line-height: 80px;
+	text-transform: uppercase;
+}
+
+nav.main .logo img {
+	max-width: 200px;
+	display: block;
+	margin: 10px 0 -100px;
+}
+
+.emotion .slide {
+	width: 100%;
+	height: 80vh;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	background-color: #f00;
+	background-blend-mode: multiply;
+}
+
+.emotion .slide .text {
+	position: absolute;
+	bottom: 150px;
+	width:  100%;
+	color: #fff;
+	font-size: 1.5em;
+}
+
+.emotion .slide .text .button {
+	background: #fff;
+	display: inline-block;
+	padding: 8px 20px;
+	color: #000;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 0.9em;
+	letter-spacing: 1px;
+}

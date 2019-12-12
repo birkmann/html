@@ -78,8 +78,6 @@ nav.main .logo img {
 	background-size: cover;
 	background-position: center;
 	position: relative;
-	background-color: #f00;
-	background-blend-mode: multiply;
 }
 
 .emotion .slide .text {
@@ -88,15 +86,4 @@ nav.main .logo img {
 	width:  100%;
 	color: #fff;
 	font-size: 1.5em;
-}
-
-.emotion .slide .text .button {
-	background: #fff;
-	display: inline-block;
-	padding: 8px 20px;
-	color: #000;
-	text-decoration: none;
-	text-transform: uppercase;
-	font-size: 0.9em;
-	letter-spacing: 1px;
 }

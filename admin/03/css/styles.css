@@ -27,7 +27,6 @@ body {
     z-index: 98;
     width: 100px;
     transform: translateX(-100%);
-    transition: all 0.25s ease-in-out;
 }
 
 .side-menu ul {
@@ -177,6 +176,14 @@ body {
 	line-height: 1.2em;
 }
 
+.data h2 {
+	color: #333;
+}
+
+.data canvas {
+	width: 100% !important;
+}
+
 @media screen and (min-width: 1024px) {
 	.side-menu {
 	    transform: translateX(0%);
@@ -208,12 +215,30 @@ body {
 	.col-xl-8 {
 		flex: 0 0 calc(66.666% - 20px);
 	}
-}
-
-.data h2 {
-	color: #333;
-}
-
-.data canvas {
-	width: 100% !important;
+	.side-menu {
+	    width: 200px;
+	}
+	.side-menu .brand {
+		margin-bottom: 50px;
+	}
+	.side-menu li a {
+	    padding: 25px 0;
+	}
+	.content {
+		margin-left: 200px;
+	}
+	.overview {
+		flex: 0 0 400px;
+	}
+	.overview .card .number {
+	    font-size: 1.5em;
+	    margin-top: 50px;
+	    margin-bottom: 10px;
+	}
+	.overview .card .name {
+	    font-size: 1.25em;
+	}
+	.data {
+		flex: 0 0 calc(100% - 400px);
+	}
 }

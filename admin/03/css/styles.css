@@ -202,6 +202,7 @@ body {
 		display: flex;
 		flex-direction: column;
 		overflow: hidden;
+		width: 100%;
 	}
 	.col-lg-6 {
 		flex: 0 0 calc(50% - 20px);
@@ -211,6 +212,9 @@ body {
 @media screen and (min-width: 1399px) {
 	.col-xl-4 {
 		flex: 0 0 calc(33.333% - 20px);
+	}
+	.col-xl-6 {
+		flex: 0 0 calc(50% - 20px);
 	}
 	.col-xl-8 {
 		flex: 0 0 calc(66.666% - 20px);
